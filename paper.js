@@ -18,10 +18,12 @@ World.add(world,this.body);
 
         push()
         translate(pos.x,pos.y);
-        ellipseMode(CENTER)
+        //ellipseMode(CENTER)
         strokeWeight(3);
         //fill(255,0,255);
-        ellipse(0,0,this.r,this.r);
+        //ellipse(0,0,this.r,this.r);
+        imageMode(CENTER);
+        image(this.image, 0, 0, 70, 70);
         pop()
     }
 }
